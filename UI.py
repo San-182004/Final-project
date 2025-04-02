@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-!pip install keras
 from keras.models import load_model
 from keras.applications.resnet import preprocess_input, decode_predictions
 

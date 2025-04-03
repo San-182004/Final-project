@@ -8,7 +8,7 @@ st.title("Image Recognition App")
 st.write("Upload an image, and I'll tell you what it is!")
 
 # Model Selection
-model_option = st.radio("Choose a model:", ("Alzheimer Detection Model", "Model B"))
+model_option = st.radio("Choose a model:", ("Alzheimer Detection Model", "Brain Tumor Detection Model))
 
 # Load the selected model
 if model_option == "Alzheimer Detection Model":

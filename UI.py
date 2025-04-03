@@ -4,6 +4,17 @@ import numpy as np
 from tensorflow import keras
 
 # Streamlit UI
+st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background: url("{image_url}") no-repeat center center fixed;
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 st.title("Brain Tumor and Alzheimer's Disease detection using Python")
 st.write("Upload an image, of appropriate filetype(jpg,jpeg,png).")
 

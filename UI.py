@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 from keras.applications.resnet import preprocess_input, decode_predictions
 
-model = pickle.load("Models/Alzheimer_detection_model.h5", compile=False)
+model = pickle.load("Models/Alzheimer_detection_model.h5")
 
 # Streamlit UI
 st.title("ALzheimer's Detection")

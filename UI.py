@@ -8,7 +8,7 @@ st.markdown(
         f"""
         <style>
         .stApp {{
-            background: url("{image_url}") no-repeat center center fixed;
+            background: url("{Image.png}") no-repeat center center fixed;
             background-size: cover;
         }}
         </style>

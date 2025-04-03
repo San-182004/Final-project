@@ -6,6 +6,7 @@ from tensorflow import keras
 # Streamlit UI
 st.image("Image.jpg", use_column_width=True)
 st.title("Brain Tumor and Alzheimer's Disease detection using Python")
+st.write("This application is a dynamic detection model that classifies the MRI scans uploaded by the users, for Brain Tumor and Alzheimer's disease.")
 st.write("Upload an image, of appropriate filetype(jpg,jpeg,png).")
 
 # Model Selection

@@ -20,7 +20,7 @@ else:
     class_names = ["Glioma", "Healthy", "Meningioma", "Pituitary"]  # Replace with actual class names
 
 if model_option == "Alzheimer Detection Model":
-    st.write("""        Alzheimer's disease is classified into different stages based on cognitive decline and daily functioning. 
+    st.write("""\t\tAlzheimer's disease is classified into different stages based on cognitive decline and daily functioning. 
     Here’s a brief summary of the key categories: 
         \n1.Non-Demented (No Dementia) – Individuals show no signs of cognitive impairment. Memory, reasoning, and daily activities are unaffected.
         \n2.Very Mildly Demented (Early Stage) – Slight memory lapses occur, but they do not interfere significantly with daily life. Individuals may occasionally forget names or misplace objects.
@@ -28,7 +28,7 @@ if model_option == "Alzheimer Detection Model":
         \n4.Moderate Demented (Moderate Alzheimer's) – Significant cognitive decline affects language, problem-solving, and personal care. Patients may become confused about time and place, need assistance with daily tasks, and experience personality changes.
         \nEach stage progressively worsens, with early detection and intervention playing a key role in managing symptoms.""")
 else:
-    st.write("""         A brain tumor is an abnormal growth of cells in or around the brain. It can be benign (non-cancerous) or malignant (cancerous). Brain tumors can develop from brain tissue itself (primary tumors) or spread from other parts of the body (secondary or metastatic tumors). Depending on their size and location, they may affect brain function, causing symptoms like headaches, seizures, vision problems, and difficulty with movement or cognition.
+    st.write("""\t\tA brain tumor is an abnormal growth of cells in or around the brain. It can be benign (non-cancerous) or malignant (cancerous). Brain tumors can develop from brain tissue itself (primary tumors) or spread from other parts of the body (secondary or metastatic tumors). Depending on their size and location, they may affect brain function, causing symptoms like headaches, seizures, vision problems, and difficulty with movement or cognition.
         \n\n1.Glioma:
         \n\t-A type of tumor that starts in the glial cells of the brain or spinal cord.
         \n\t-Can be malignant (cancerous) or benign.

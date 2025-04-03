@@ -15,7 +15,7 @@ model_option = st.radio("Choose a model:", ("Alzheimer Detection Model", "Brain 
 # Load the selected model
 if model_option == "Alzheimer Detection Model":
     model = keras.models.load_model("Alzheimer_detection_model.h5")
-    class_names = ["MildDemented", "ModerateDemented", "NonDemented", "VeryMildDemented"]
+    class_names = ["Mild Demented", "Moderate Demented", "Non Demented", "Very Mild Demented"]
 else:
     model = keras.models.load_model("Brain_Tumor_Model.h5")  # Path to Model B
     class_names = ["Glioma", "Healthy", "Meningioma", "Pituitary"]  # Replace with actual class names

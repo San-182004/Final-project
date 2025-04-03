@@ -29,7 +29,7 @@ if uploaded_image is not None:
     predictions = model.predict(image_array)
 
     # If it's a binary classification model
-    class_names = ["Class 0", "Class 1"]  # Replace with actual class names
+    class_names = ["MildDemented", "ModerateDemented", "NonDemented", "VeryMildDemented"]  # Replace with actual class names
     predicted_class = np.argmax(predictions)
     confidence = predictions[0][predicted_class] * 100
 

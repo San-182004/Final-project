@@ -5,7 +5,7 @@ from tensorflow import keras
 
 # Streamlit UI
 st.title("Image Recognition App")
-st.write("Upload an image, and I'll tell you what it is!")
+st.write("Upload an image, of appropriate filetype(jpg,jpeg,png).")
 
 # Model Selection
 model_option = st.radio("Choose a model:", ("Alzheimer Detection Model", "Brain Tumor Detection Model"))

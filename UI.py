@@ -19,7 +19,7 @@ else:
     class_names = ["Glioma", "Healthy", "Meningioma", "Pituitary"]  # Replace with actual class names
 
 # Image Upload
-uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_image = st.file_uploader("Upload file here:", type=["jpg", "jpeg", "png"])
 
 if uploaded_image is not None:
     # Open and display the image

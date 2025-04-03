@@ -15,8 +15,8 @@ if model_option == "Alzheimer Detection Model":
     model = keras.models.load_model("Alzheimer_detection_model.h5")
     class_names = ["MildDemented", "ModerateDemented", "NonDemented", "VeryMildDemented"]
 else:
-    model = keras.models.load_model("brain_tumor_detection_model.h5")  # Path to Model B
-    class_names = ["Glioma", "Meningioma", "No Tumor", "Pituitary"]  # Replace with actual class names
+    model = keras.models.load_model("Brain_Tumor_Model.h5")  # Path to Model B
+    class_names = ["Glioma", "Healthy", "Meningioma", "Pituitary"]  # Replace with actual class names
 
 # Image Upload
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])

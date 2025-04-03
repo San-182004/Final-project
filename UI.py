@@ -28,11 +28,12 @@ if uploaded_image is not None:
 
     # Preprocess the image
     image = image.resize((128, 128))  # Adjust if needed
-    image_array = np.array(image) / 255.0  # Normalizing as you used Rescaling(1./255)
+    #image_array = np.array(image) / 255.0  # Normalizing as you used Rescaling(1./255)
     image_array = np.expand_dims(image_array, axis=0)
 
     # Make Predictions
     predictions = model.predict(image_array)
+    st.write(predictions)
     predicted_class = np.argmax(predictions)
     confidence = predictions[0][predicted_class] * 100
 

@@ -29,7 +29,7 @@ if model_option == "Alzheimer Detection Model":
         \n4.Moderate Demented (Moderate Alzheimer's) – Significant cognitive decline affects language, problem-solving, and personal care. Patients may become confused about time and place, need assistance with daily tasks, and experience personality changes.
         \nEach stage progressively worsens, with early detection and intervention playing a key role in managing symptoms.""")
 else:
-    st.write("""\t\tA brain tumor is an abnormal growth of cells in or around the brain. It can be benign (non-cancerous) or malignant (cancerous). Brain tumors can develop from brain tissue itself (primary tumors) or spread from other parts of the body (secondary or metastatic tumors). Depending on their size and location, they may affect brain function, causing symptoms like headaches, seizures, vision problems, and difficulty with movement or cognition.
+    st.write("""**A brain tumor is an abnormal growth of cells in or around the brain. It can be benign (non-cancerous) or malignant (cancerous). Brain tumors can develop from brain tissue itself (primary tumors) or spread from other parts of the body (secondary or metastatic tumors). Depending on their size and location, they may affect brain function, causing symptoms like headaches, seizures, vision problems, and difficulty with movement or cognition.
         \n\n1.Glioma:
         \n\t-A type of tumor that starts in the glial cells of the brain or spinal cord.
         \n\t-Can be malignant (cancerous) or benign.
@@ -71,5 +71,5 @@ if uploaded_image is not None:
 
     # Display the prediction
     st.write("### Prediction:")
-    st.write(f"{class_names[predicted_class]} with confidence {confidence:.2f}%")
+    st.write(f"{class_names[predicted_class]} with confidence rate of {confidence:.2f}%")
 

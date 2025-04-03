@@ -19,6 +19,35 @@ else:
     model = keras.models.load_model("Brain_Tumor_Model.h5")  # Path to Model B
     class_names = ["Glioma", "Healthy", "Meningioma", "Pituitary"]  # Replace with actual class names
 
+if model_option == "Alzheimer Detection Model":
+    st.write("""Alzheimer's disease is classified into different stages based on cognitive decline and daily functioning. 
+    Here’s a brief summary of the key categories: 
+        \n1.Non-Demented (No Dementia) – Individuals show no signs of cognitive impairment. Memory, reasoning, and daily activities are unaffected.
+        \n2.Very Mildly Demented (Early Stage) – Slight memory lapses occur, but they do not interfere significantly with daily life. Individuals may occasionally forget names or misplace objects.
+        \n3.Mildly Demented (Mild Alzheimer's) – Noticeable memory loss, difficulty with problem-solving, and challenges in managing finances or planning. Individuals may struggle to recall recent events but can still perform basic self-care.
+        \n4.Moderate Demented (Moderate Alzheimer's) – Significant cognitive decline affects language, problem-solving, and personal care. Patients may become confused about time and place, need assistance with daily tasks, and experience personality changes.
+        \nEach stage progressively worsens, with early detection and intervention playing a key role in managing symptoms.""")
+else:
+    st.write("""A brain tumor is an abnormal growth of cells in or around the brain. It can be benign (non-cancerous) or malignant (cancerous). Brain tumors can develop from brain tissue itself (primary tumors) or spread from other parts of the body (secondary or metastatic tumors). Depending on their size and location, they may affect brain function, causing symptoms like headaches, seizures, vision problems, and difficulty with movement or cognition.
+        \n\n1.Glioma:
+        \n\t-A type of tumor that starts in the glial cells of the brain or spinal cord.
+        \n\t-Can be malignant (cancerous) or benign.
+        \n\t-Common subtypes include astrocytomas, oligodendrogliomas, and glioblastomas.
+        \n\t\tSymptoms: Headaches, seizures, memory loss, and neurological deficits.
+        \n\n2.Pituitary Tumor:
+        \n\t-Forms in the pituitary gland, affecting hormone production.
+        \n\t-Mostly benign but can disrupt bodily functions by overproducing or underproducing hormones.
+        \n\t\tSymptoms: Vision problems, headaches, fatigue, and hormonal imbalances.
+        \n\n3.Meningioma:
+        \n\t-A tumor that arises from the meninges (the membranes covering the brain and spinal cord).
+        \n\t-Usually benign but can grow and cause pressure-related symptoms.
+        \n\t\tSymptoms: Headaches, seizures, vision problems, and cognitive changes.
+        \n\4.Healthy Brain:
+        \n\t-A normal brain with no abnormal growths or masses.
+        \n\t-Functions optimally without neurological deficits or symptoms caused by tumors.
+        \n\nTreatment options include surgery, radiation, chemotherapy, and targeted therapies.""")
+
+
 # Image Upload
 uploaded_image = st.file_uploader("Upload file here:", type=["jpg", "jpeg", "png"])
 
@@ -43,13 +72,3 @@ if uploaded_image is not None:
     st.write("### Prediction:")
     st.write(f"**Result:** {class_names[predicted_class]} with confidence {confidence:.2f}%")
 
-if model_option == "Alzheimer Detection Model":
-    st.write("""Alzheimer's disease is classified into different stages based on cognitive decline and daily functioning. 
-    Here’s a brief summary of the key categories: 
-        \n1.Non-Demented (No Dementia) – Individuals show no signs of cognitive impairment. Memory, reasoning, and daily activities are unaffected.
-        \n2.Very Mildly Demented (Early Stage) – Slight memory lapses occur, but they do not interfere significantly with daily life. Individuals may occasionally forget names or misplace objects.
-        \n3.Mildly Demented (Mild Alzheimer's) – Noticeable memory loss, difficulty with problem-solving, and challenges in managing finances or planning. Individuals may struggle to recall recent events but can still perform basic self-care.
-        \n4.Moderate Demented (Moderate Alzheimer's) – Significant cognitive decline affects language, problem-solving, and personal care. Patients may become confused about time and place, need assistance with daily tasks, and experience personality changes.
-        \nEach stage progressively worsens, with early detection and intervention playing a key role in managing symptoms.""")
-else:
-    st.write("Glioma: \n\tA type of tumor that starts in the glial cells of the brain or spinal cord.\n\t-Can be malignant (cancerous) or benign.\n\t-Common subtypes include astrocytomas, oligodendrogliomas, and glioblastomas.\n\t\tSymptoms: Headaches, seizures, memory loss, and neurological deficits.\n\nPituitary Tumor:\n\t-Forms in the pituitary gland, affecting hormone production.\n\t-Mostly benign but can disrupt bodily functions by overproducing or underproducing hormones.\n\t\tSymptoms: Vision problems, headaches, fatigue, and hormonal imbalances.\n\nMeningioma:\n\t-A tumor that arises from the meninges (the membranes covering the brain and spinal cord).\n\t-Usually benign but can grow and cause pressure-related symptoms.\n\t\tSymptoms: Headaches, seizures, vision problems, and cognitive changes.\n\nHealthy Brain:\n\t-A normal brain with no abnormal growths or masses.\n\t-Functions optimally without neurological deficits or symptoms caused by tumors.")

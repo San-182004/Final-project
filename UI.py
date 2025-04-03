@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow import keras
 
 # Streamlit UI
-st.title("Image Recognition App")
+st.title("Brain Tumor and Alzheimer's Disease detection using Python")
 st.write("Upload an image, of appropriate filetype(jpg,jpeg,png).")
 
 # Model Selection

@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 from keras.models import load_model
 from keras.applications.resnet import preprocess_input, decode_predictions
-
+import pickle
 model = pickle.load(open("Alzheimer_detection_model.h5"))
 
 # Streamlit UI

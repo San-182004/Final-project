@@ -28,7 +28,7 @@ if uploaded_image is not None:
 
     # Preprocess the image
     image = image.resize((128, 128))  # Adjust if needed
-    #image_array = np.array(image) / 255.0  # Normalizing as you used Rescaling(1./255)
+    image_array = np.array(image) / 255.0  # Normalizing as you used Rescaling(1./255)
     image_array = np.expand_dims(image, axis=0)
 
     # Make Predictions

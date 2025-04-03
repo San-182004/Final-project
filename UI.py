@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 from tensorflow import keras
+import base64
 
 # Streamlit UI
 st.markdown(

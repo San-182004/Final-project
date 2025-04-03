@@ -71,5 +71,5 @@ if uploaded_image is not None:
 
     # Display the prediction
     st.write("### Prediction:")
-    st.write(f"**Result:** {class_names[predicted_class]} with confidence {confidence:.2f}%")
+    st.write(f"{class_names[predicted_class]} with confidence {confidence:.2f}%")
 
